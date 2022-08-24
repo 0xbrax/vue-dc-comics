@@ -84,6 +84,7 @@ export default {
 
     header {
         height: 80px;
+        color: $black-variant;
     }
 
     header {
@@ -103,6 +104,7 @@ export default {
             a {
                 padding: 0 10px;
                 line-height: 80px;
+                color: $black-variant;
 
                 &.active, &:hover {
                     color: $brand-color;

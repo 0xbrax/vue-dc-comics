@@ -1,7 +1,9 @@
 <template>
-    <div>
-
-    </div>
+    <main>
+        <div class="container">
+            Section contents here
+        </div>
+    </main>
 </template>
 
 <script>
@@ -10,6 +12,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
+    @import '../style/common.scss';
 
+
+    main {
+        background-color: $black-variant;
+        color: #ffffff;
+        height: 200px;
+    }
 </style>
