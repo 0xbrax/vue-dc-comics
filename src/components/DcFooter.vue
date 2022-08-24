@@ -1,8 +1,13 @@
 <template>
     <footer>
         <div class="upper-footer">
-            <div class="container">
-
+            <div class="container flex just-sp-bt align-ctr up-case">
+                <div v-for="(special, specialIndex) in specialLinks" :key="specialIndex">
+                    <a :href="special.url" class="flex align-ctr">
+                        <img :src="special.icon" :alt="special.name">
+                        <div>{{special.name}}</div>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -56,16 +61,27 @@
                     </div>
                     
                 </div>
-
-                <div>
-
-                </div>
             </div>
         </div>
 
         <div class="bottom-footer">
-            <div class="container">
+            <div class="container up-case flex just-sp-bt align-ctr">
+                <div>
+                    <a class="button main-btn" href="#">
+                        Sign-up now!
+                    </a>
+                </div>
 
+                <div class="flex align-ctr">
+                    <h4 class="follow-us">
+                        Follow us
+                    </h4>
+                    <div v-for="(social, socialIndex) in socialLinks" :key="socialIndex">
+                        <a :href="social.url">
+                            <img :src="social.icon" :alt="social.site">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -76,6 +92,33 @@ export default {
     name: 'DcFooter',
     data() {
         return {
+            specialLinks: [
+                {
+                    name: 'Digital comics',
+                    icon: require('@/img/buy-comics-digital-comics.png'),
+                    url: '#'
+                },
+                {
+                    name: 'DC merchandise',
+                    icon: require('@/img/buy-comics-merchandise.png'),
+                    url: '#'
+                },
+                {
+                    name: 'Subscription',
+                    icon: require('@/img/buy-comics-subscriptions.png'),
+                    url: '#'
+                },
+                {
+                    name: 'Comic shop locator',
+                    icon: require('@/img/buy-comics-shop-locator.png'),
+                    url: '#'
+                },
+                {
+                    name: 'DC power visa',
+                    icon: require('@/img/buy-dc-power-visa.svg'),
+                    url: '#'
+                }
+            ],
             navLinks: [
                 {
                     text: 'Characters',
@@ -183,6 +226,33 @@ export default {
                     text: 'Shop DC Collectibles',
                     url: '#'
                 }
+            ],
+            socialLinks: [
+                {
+                    site: 'facebook',
+                    icon: require('@/img/footer-facebook.png'),
+                    url: '#'
+                },
+                {
+                    site: 'twitter',
+                    icon: require('@/img/footer-twitter.png'),
+                    url: '#'
+                },
+                {
+                    site: 'youtube',
+                    icon: require('@/img/footer-youtube.png'),
+                    url: '#'
+                },
+                {
+                    site: 'pinterest',
+                    icon: require('@/img/footer-pinterest.png'),
+                    url: '#'
+                },
+                {
+                    site: 'periscope',
+                    icon: require('@/img/footer-periscope.png'),
+                    url: '#'
+                }
             ]
         }
     }
@@ -198,15 +268,33 @@ export default {
     }
 
     .upper-footer {
-        height: 100px;
         background-color: $brand-color;
+        padding: 50px 0;
+    }
+
+    .upper-footer {
+        img {
+            height: 50px;
+        }
+        a {
+            color: #ffffff;
+        }
     }
 
     .middle-footer {
-        background-image: url('../img/footer-bg.jpg');
+        background-image: url('../img/footer-bg.jpg'), url('../img/dc-logo-bg.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center, right;
+    }
+
+    .middle-footer {
+        .container {
+            background-image: url('../img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            padding: 25px 0;
+        }
     }
 
     .link-list {
@@ -222,5 +310,15 @@ export default {
     .bottom-footer {
         height: 100px;
         background-color: $grey-dark;
+    }
+
+    .bottom-footer {
+        .container {
+            height: 100%;
+        }
+    }
+
+    .follow-us {
+        color: $brand-color;
     }
 </style>

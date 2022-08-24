@@ -33,3 +33,14 @@ ul {
 .up-case {
     text-transform: uppercase;
 }
+
+.button {
+    display: inline-block;
+    padding: 10px;
+}
+
+.main-btn {
+    color: #ffffff;
+    border: 2px solid $brand-color;
+    font-weight: bold;
+}
