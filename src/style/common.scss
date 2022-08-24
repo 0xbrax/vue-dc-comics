@@ -13,7 +13,9 @@ $black-variant: #1c1c1c;
 $grey-light: #959595;
 $grey-dark: #303030;
 
+
 a {
+    color: black;
     &:link {text-decoration: none};
     &:visited {text-decoration: none};
     &:active {text-decoration: none};

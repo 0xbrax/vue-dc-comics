@@ -19,6 +19,10 @@
     display: flex;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .just-sp-bt {
     justify-content: space-between;
 }
