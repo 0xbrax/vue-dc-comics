@@ -1,36 +1,24 @@
 <template>
     <main>
         <DcJumbo />
-
-        <div class="container">
-            
-        </div>
+        <CardsSection />
     </main>
 </template>
 
 <script>
 import DcJumbo from '../components/sections/DcJumbo.vue'
-import DCCards from '../assets/data/dc-comics.json'
+import CardsSection from '../components/sections/CardsSection.vue'
+
 
 export default {
     name: 'DcMain',
     components: {
-        DcJumbo
-    },
-    data() {
-        return {
-            dcComicsCard: DCCards
-        }
+        DcJumbo,
+        CardsSection
     }
 }
 </script>
 
 <style scoped lang="scss">
     @import '../style/common.scss';
-
-
-    main {
-        background-color: $black-variant;
-        color: #ffffff;
-    }
 </style>
