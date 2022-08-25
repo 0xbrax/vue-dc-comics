@@ -1,14 +1,27 @@
 <template>
     <main>
+        <DcJumbo />
+
         <div class="container">
-            Section contents here
+            
         </div>
     </main>
 </template>
 
 <script>
+import DcJumbo from '../components/sections/DcJumbo.vue'
+import DCCards from '../assets/data/dc-comics.json'
+
 export default {
-    name: 'DcMain'
+    name: 'DcMain',
+    components: {
+        DcJumbo
+    },
+    data() {
+        return {
+            dcComicsCard: DCCards
+        }
+    }
 }
 </script>
 
@@ -19,6 +32,5 @@ export default {
     main {
         background-color: $black-variant;
         color: #ffffff;
-        height: 200px;
     }
 </style>

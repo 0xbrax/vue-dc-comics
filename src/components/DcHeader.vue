@@ -2,7 +2,7 @@
     <header>
         <div class="container flex just-sp-bt align-ctr">
             <a href="#">
-            <img src="@/img/dc-logo.png" alt="DC Comics">
+            <img src="@/assets/img/dc-logo.png" alt="DC Comics">
         </a>
 
         <ul class="up-case">

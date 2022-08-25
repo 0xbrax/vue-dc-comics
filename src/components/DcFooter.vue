@@ -95,27 +95,27 @@ export default {
             specialLinks: [
                 {
                     name: 'Digital comics',
-                    icon: require('@/img/buy-comics-digital-comics.png'),
+                    icon: require('@/assets/img/buy-comics-digital-comics.png'),
                     url: '#'
                 },
                 {
                     name: 'DC merchandise',
-                    icon: require('@/img/buy-comics-merchandise.png'),
+                    icon: require('@/assets/img/buy-comics-merchandise.png'),
                     url: '#'
                 },
                 {
                     name: 'Subscription',
-                    icon: require('@/img/buy-comics-subscriptions.png'),
+                    icon: require('@/assets/img/buy-comics-subscriptions.png'),
                     url: '#'
                 },
                 {
                     name: 'Comic shop locator',
-                    icon: require('@/img/buy-comics-shop-locator.png'),
+                    icon: require('@/assets/img/buy-comics-shop-locator.png'),
                     url: '#'
                 },
                 {
                     name: 'DC power visa',
-                    icon: require('@/img/buy-dc-power-visa.svg'),
+                    icon: require('@/assets/img/buy-dc-power-visa.svg'),
                     url: '#'
                 }
             ],
@@ -230,27 +230,27 @@ export default {
             socialLinks: [
                 {
                     site: 'facebook',
-                    icon: require('@/img/footer-facebook.png'),
+                    icon: require('@/assets/img/footer-facebook.png'),
                     url: '#'
                 },
                 {
                     site: 'twitter',
-                    icon: require('@/img/footer-twitter.png'),
+                    icon: require('@/assets/img/footer-twitter.png'),
                     url: '#'
                 },
                 {
                     site: 'youtube',
-                    icon: require('@/img/footer-youtube.png'),
+                    icon: require('@/assets/img/footer-youtube.png'),
                     url: '#'
                 },
                 {
                     site: 'pinterest',
-                    icon: require('@/img/footer-pinterest.png'),
+                    icon: require('@/assets/img/footer-pinterest.png'),
                     url: '#'
                 },
                 {
                     site: 'periscope',
-                    icon: require('@/img/footer-periscope.png'),
+                    icon: require('@/assets/img/footer-periscope.png'),
                     url: '#'
                 }
             ]
@@ -282,15 +282,15 @@ export default {
     }
 
     .middle-footer {
-        background-image: url('../img/footer-bg.jpg'), url('../img/dc-logo-bg.png');
+        background-image: url('../assets/img/footer-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center, right;
+        background-position: center;
     }
 
     .middle-footer {
         .container {
-            background-image: url('../img/dc-logo-bg.png');
+            background-image: url('../assets/img/dc-logo-bg.png');
             background-repeat: no-repeat;
             background-position: right;
             padding: 25px 0;
