@@ -36,6 +36,12 @@ ul {
 
 .button {
     display: inline-block;
+}
+
+.main-btn {
+    color: #ffffff;
+    border: 2px solid $brand-color;
+    font-weight: bold;
     padding: 10px;
 }
 
@@ -43,4 +49,12 @@ ul {
     color: #ffffff;
     border: 2px solid $brand-color;
     font-weight: bold;
+    padding: 10px;
+}
+
+.alt-btn {
+    color: #ffffff;
+    background-color: $brand-color;
+    font-weight: bold;
+    padding: 10px 30px;
 }
