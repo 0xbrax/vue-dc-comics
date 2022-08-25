@@ -10,7 +10,7 @@
             </div>
 
             <div class="flex just-sp-ctr">
-                <div class="button alt-btn">
+                <div class="button alt-btn load-btn">
                 Load more
             </div>
             </div>
@@ -61,5 +61,12 @@ export default {
         position: absolute;
         left: 0;
         top: -19px;
+    }
+
+    .load-btn {
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
     }
 </style>

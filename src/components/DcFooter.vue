@@ -5,7 +5,7 @@
                 <div v-for="(special, specialIndex) in specialLinks" :key="specialIndex">
                     <a :href="special.url" class="flex align-ctr">
                         <img :src="special.icon" :alt="special.name">
-                        <div>{{special.name}}</div>
+                        <div class="ml-10">{{special.name}}</div>
                     </a>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                         <div>
                             <h3 class="up-case">DC Comics</h3>
                             <ul>
-                                <li v-for="(link, linkIndex) in navLinks" :key="linkIndex">
+                                <li class="mt-2" v-for="(link, linkIndex) in navLinks" :key="linkIndex">
                                     <a :href="link.url" :class="link.active?'active':''" >
                                         {{link.text}}
                                     </a>
@@ -26,10 +26,10 @@
                             </ul>
                         </div>
 
-                        <div>
+                        <div class="mt-25">
                             <h3 class="up-case">Shop</h3>
                             <ul>
-                                <li v-for="(link, linkIndex) in shopLinks" :key="linkIndex">
+                                <li class="mt-2" v-for="(link, linkIndex) in shopLinks" :key="linkIndex">
                                     <a :href="link.url" :class="link.active?'active':''" >
                                         {{link.text}}
                                     </a>
@@ -41,7 +41,7 @@
                     <div class="link-list">
                         <h3 class="up-case">DC</h3>
                         <ul>
-                            <li v-for="(link, linkIndex) in mainLinks" :key="linkIndex">
+                            <li class="mt-2" v-for="(link, linkIndex) in mainLinks" :key="linkIndex">
                                 <a :href="link.url" :class="link.active?'active':''" >
                                     {{link.text}}
                                 </a>
@@ -52,7 +52,7 @@
                     <div class="link-list">
                         <h3 class="up-case">Sites</h3>
                         <ul>
-                            <li v-for="(link, linkIndex) in infoLinks" :key="linkIndex">
+                            <li class="mt-2" v-for="(link, linkIndex) in infoLinks" :key="linkIndex">
                                 <a :href="link.url" :class="link.active?'active':''" >
                                     {{link.text}}
                                 </a>
@@ -76,7 +76,7 @@
                     <h4 class="follow-us">
                         Follow us
                     </h4>
-                    <div v-for="(social, socialIndex) in socialLinks" :key="socialIndex">
+                    <div class="ml-10" v-for="(social, socialIndex) in socialLinks" :key="socialIndex">
                         <a :href="social.url">
                             <img :src="social.icon" :alt="social.site">
                         </a>
@@ -261,6 +261,7 @@ export default {
 
 <style scoped lang="scss">
     @import '../style/common.scss';
+    @import '../style/utility.scss';
 
 
     footer {
@@ -275,6 +276,9 @@ export default {
     .upper-footer {
         img {
             height: 50px;
+        }
+        .container div:last-of-type img {
+            height: 35px;
         }
         a {
             color: #ffffff;
@@ -304,6 +308,9 @@ export default {
     ul {
         a {
             color: $grey-light;
+            &:hover {
+                color: #ffffff;
+            }
         }
     }
 
@@ -315,6 +322,9 @@ export default {
     .bottom-footer {
         .container {
             height: 100%;
+        }
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
         }
     }
 

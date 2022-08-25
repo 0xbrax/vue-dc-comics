@@ -3,7 +3,7 @@
         <div class="img-wrapper">
             <img :src="DcThumb" :alt="DcThumb">
         </div>
-        {{DcSeries}}
+        <p>{{DcSeries}}</p>
     </div>
 </template>
 
@@ -23,10 +23,14 @@ export default {
     .img-wrapper {
         width: 100%;
         aspect-ratio: 1 / 1;
-        overflow-y: hidden;
+        overflow: hidden;
     }
 
     img {
         object-fit: contain;
+    }
+
+    p {
+        margin-top: 10px
     }
 </style>
